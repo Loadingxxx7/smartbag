@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:background="@drawable/bg_jianbian2">
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:hint="Username"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_new"/>
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:hint="设备ID"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tv_user"
+            android:background="@drawable/bg_new"
+            />
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:hint="设备状态"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tv_1"
+            android:background="@drawable/bg_new"
+            />
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:hint="加速度"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tv_2"
+            android:background="@drawable/bg_new"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_3"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_new"/>
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="退出登录"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_btn_logout"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
